@@ -7,11 +7,11 @@ address: "Douglas Library Electronic Classroom (Room 416), Kingston, ON"      # 
 country: "ca"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "44.227517, -76.495229"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "Feb 21-23, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Apr 24-25, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2017-02-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2010-02-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu", "Robert Colautti"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+startdate: 2017-04-24      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2010-04-25        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 #helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "jeff.stafford@queensu.ca"      # contact email address for host, lead instructor, or whoever else is handling questions
 etherpad:             # optional: URL for the workshop Etherpad if there is one
@@ -139,17 +139,15 @@ Software Carpentry staff may need to know in your email. -->
 
 <hr/>
 
-
+<!--
 <h2 id="lesson_mat">Lesson Materials</h2>
 
 <ul>
   <li><a href="http://swcarpentry.github.io/r-novice-gapminder/">R for reproducible science</a></li>
   <li><a href="https://swcarpentry.github.io/shell-novice/">Using the command-line</a></li>
   <li><a href="http://swcarpentry.github.io/git-novice/">Version control with Git</a></li>
-  <li><a href="http://post.queensu.ca/~rc91/NGS/">Next-generation Sequencing Tutorial</a></li>
 </ul>
-
-<p><a href="https://github.com/jstaf/february-r-workshop-queens">Link to repository with all of the workshop R scripts</a>. Download these to your computer with the "Clone and Download" button, or fork this repository on Github.</p>
+-->
 
 
 <!--
@@ -165,10 +163,10 @@ Software Carpentry staff may need to know in your email. -->
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
 <p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+<!-- <p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p> -->
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Programming with R</td> </tr>
@@ -179,7 +177,7 @@ Software Carpentry staff may need to know in your email. -->
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
@@ -189,14 +187,6 @@ Software Carpentry staff may need to know in your email. -->
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
-  </div>
-  <div class="col-md-4">
-    <h3>Day 3</h3>
-	<table class="table table-striped">
-	  <tr> <td>09:00</td>  <td>Next Generation Sequencing Tutorial</td> </tr>
-	  <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-	  <tr> <td>12:30</td>  <td>Wrap-up</td> </tr>
-	</table>
   </div>
 </div>
 
@@ -227,7 +217,7 @@ Software Carpentry staff may need to know in your email. -->
 <h2 id="syllabus">Syllabus</h2>
 
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-shell">The Unix Shell</h3>
     <ul>
       <li>Files and directories</li>
@@ -239,7 +229,7 @@ Software Carpentry staff may need to know in your email. -->
       <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-r">Programming in R</h3>
     <ul>
       <li>Introduction to R and RStudio</li>
@@ -252,9 +242,7 @@ Software Carpentry staff may need to know in your email. -->
       <li><a href="{{site.swc_pages}}/r-novice-gapminder/reference/">Reference...</a></li>
     </ul>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h3 id="syllabus-git">Version Control with Git</h3>
     <ul>
       <li>Creating a repository</li>
@@ -266,19 +254,6 @@ Software Carpentry staff may need to know in your email. -->
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
-  </div>
-  <div class="col-md-6">
-	<h3 id="syllabus-ngs">Next Generation Sequencing</h3>
-    <ul>
-       <li>Introduction to NGS -- technology and applications</li>
-       <li>Exploring short-read sequence data</li>
-       <li>Checking the quality of sequence data</li>
-       <li>De novo genome assembly</li>
-       <li>Aligning DNA and RNA sequences to a reference genome</li>
-       <li>Exploring gene expression with TopHat2 and Cufflinks</li>
-       <li><a href="http://post.queensu.ca/~rc91/NGS/">Reference...</a></li>
-    </ul>
-  </div>
 </div>
 
 <hr/>
@@ -451,13 +426,14 @@ Software Carpentry staff may need to know in your email. -->
       <p>
         If Git is not already available on your machine you can try to
         install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
+        <code>sudo apt install git</code> and for Fedora run
+        <code>sudo dnf install git</code>.
       </p>
     </div>
   </div>
 </div> <!-- End of 'Git' section. -->
 
+<!--
 <div id="ssh">
   <h3>SSH Client</h3>
   <p>For the third day of the workshop, we will work remotely on servers provided by the 
@@ -483,5 +459,5 @@ Software Carpentry staff may need to know in your email. -->
      <p>Your operating system includes an SSH client by default. You're all set! </p>
   </div>
 </div>
-
+-->
 
